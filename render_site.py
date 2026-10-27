@@ -14,16 +14,18 @@ def shell(lang, title, description, canonical, content):
     skip = 'Przejdź do treści' if lang == 'pl' else 'Skip to content'
     pl = ' aria-current="page"' if lang == 'pl' else ''
     en = ' aria-current="page"' if lang == 'en' else ''
+    pl_path = '/delete-data/' if canonical.endswith('/delete-data/') else '/privacy/'
+    en_path = '/en/delete-data/' if canonical.endswith('/delete-data/') else '/en/privacy/'
     return f'''<!doctype html>
 <html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{escape(title)} — Bimmer Dashboard</title><meta name="description" content="{escape(description, quote=True)}">
 <meta name="theme-color" content="#070d13"><link rel="stylesheet" href="/styles.css"><link rel="canonical" href="{ORIGIN}{canonical}">
-<link rel="alternate" hreflang="pl" href="{ORIGIN}/privacy/"><link rel="alternate" hreflang="en" href="{ORIGIN}/en/privacy/">
+<link rel="alternate" hreflang="pl" href="{ORIGIN}{pl_path}"><link rel="alternate" hreflang="en" href="{ORIGIN}{en_path}">
 </head><body><a class="skip" href="#main">{skip}</a>
 <header class="top"><div class="wrap"><a class="brand" href="/">{LOGO}<span>Bimmer Dashboard<small>KODZIX · ANDROID</small></span></a>
-<nav class="language" aria-label="Language"><a href="/privacy/" lang="pl"{pl}>Polski</a><a href="/en/privacy/" lang="en"{en}>English</a></nav></div></header>
+<nav class="language" aria-label="Language"><a href="{pl_path}" lang="pl"{pl}>Polski</a><a href="{en_path}" lang="en"{en}>English</a></nav></div></header>
 {content}
-<footer><div class="wrap"><div><p>Bimmer Dashboard · Kodzix</p><p>Konrad Koszela</p><p>Android · bimmer.dashboard</p></div><div><a href="/privacy/">Polityka prywatności</a> · <a href="/en/privacy/">Privacy policy</a><br><a class="contact" href="mailto:kodzixdev@gmail.com">kodzixdev@gmail.com</a></div></div></footer>
+<footer><div class="wrap"><div><p>Bimmer Dashboard · Kodzix</p><p>Konrad Koszela</p><p>Android · bimmer.dashboard</p></div><div><a href="/privacy/">Polityka prywatności</a> · <a href="/en/privacy/">Privacy policy</a><br><a href="/delete-data/">Usuwanie danych</a> · <a href="/en/delete-data/">Data deletion</a><br><a class="contact" href="mailto:kodzixdev@gmail.com">kodzixdev@gmail.com</a></div></div></footer>
 </body></html>
 '''
 
@@ -44,6 +46,16 @@ def main():
         destination = DIST / path.strip('/') / 'index.html'
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(shell(lang, policy['title'], policy['intro'], path, content), encoding='utf-8')
+    deletions = json.loads((ROOT / 'deletion.json').read_text(encoding='utf-8'))
+    for lang, page in deletions.items():
+        path = '/delete-data/' if lang == 'pl' else '/en/delete-data/'
+        toc_title = 'Na tej stronie' if lang == 'pl' else 'On this page'
+        toc = ''.join(f'<a href="#{s["id"]}">{escape(s["title"])}</a>' for s in page['sections'])
+        sections = ''.join(f'<section id="{s["id"]}"><h2>{escape(s["title"])}</h2>{s["html"]}</section>' for s in page['sections'])
+        content = f'''<div class="hero"><div class="wrap"><div class="eyebrow">Bimmer Dashboard · Kodzix</div><h1>{escape(page['title'])}</h1><p class="intro">{escape(page['intro'])}</p><div class="meta"><span>27.10.2026</span><span>Konrad Koszela · Kodzix</span><span>bimmer.dashboard</span></div></div></div><main id="main" class="wrap layout"><nav class="toc" aria-label="{toc_title}"><strong>{toc_title}</strong>{toc}</nav><article>{sections}</article></main>'''
+        destination = DIST / path.strip('/') / 'index.html'
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(shell(lang, page['title'], page['intro'], path, content), encoding='utf-8')
     home = f'''<main id="main" class="wrap"><div class="home"><div class="eyebrow">Kodzix · Android</div><h1>Bimmer Dashboard.<br>Prywatność i pomoc.</h1>
 <p class="intro">Informacje o danych przetwarzanych przez aplikację, reklamach i kontakcie z deweloperem. Polityka prywatności jest dostępna w języku polskim i angielskim.</p>
 <div class="links"><a class="linkcard" href="/privacy/"><strong>Polityka prywatności ↗</strong><span>Polska wersja · dane, reklamy i Twoje prawa</span></a><a class="linkcard" href="/en/privacy/" lang="en"><strong>Privacy policy ↗</strong><span>English version · data, advertising and your rights</span></a></div>

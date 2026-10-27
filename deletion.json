@@ -1,0 +1,54 @@
+{
+  "pl": {
+    "title": "Usuwanie danych",
+    "intro": "Jak poprosić o usunięcie danych przekazanych deweloperowi Bimmer Dashboard. Aplikację udostępnia Konrad Koszela pod nazwą Kodzix.",
+    "sections": [
+      {
+        "id": "request",
+        "title": "Wyślij prośbę e-mailem",
+        "html": "<p>Prośbę możesz wysłać bez instalowania aplikacji i bez zakładania konta. Bimmer Dashboard nie umożliwia tworzenia kont użytkowników.</p><ol><li>Napisz na <a href=\"mailto:kodzixdev@gmail.com?subject=Bimmer%20Dashboard%20-%20usuni%C4%99cie%20danych\"><strong>kodzixdev@gmail.com</strong></a>.</li><li>W temacie wpisz <strong>Bimmer Dashboard — usunięcie danych</strong>.</li><li>Napisz, że prosisz o usunięcie danych ze zgłoszeń pomocy technicznej, w tym przesłanych logów. Najlepiej użyj adresu, z którego wysłałeś zgłoszenie. Podaj datę lub temat zgłoszenia, jeśli je pamiętasz.</li></ol><p>Nie przesyłaj ponownie logu ani dokumentu tożsamości. Jeśli nie możemy odszukać zgłoszenia lub potwierdzić, że dotyczy Ciebie, poprosimy o niezbędne wyjaśnienia. Odpowiadamy bez zbędnej zwłoki, zasadniczo w ciągu miesiąca. W przypadkach przewidzianych prawem termin może zostać przedłużony; poinformujemy o tym i podamy powód.</p>"
+      },
+      {
+        "id": "scope",
+        "title": "Jakie dane usuwamy",
+        "html": "<p>Po rozpatrzeniu prośby usuwamy objęte nią dane ze zgłoszeń, które znajdują się pod naszą kontrolą:</p><ul><li>otrzymane wiadomości pomocy technicznej i załączniki;</li><li>logi diagnostyczne oraz zawarte w nich informacje o samochodzie, odczytach, adapterze i urządzeniu, w tym VIN lub identyfikatory adaptera, jeśli zostały przesłane;</li><li>adres e-mail i inne dane kontaktowe występujące w usuwanej korespondencji.</li></ul><p>Wyjątki i okresy przechowywania opisujemy poniżej. Nie mamy zdalnego dostępu do danych zapisanych wyłącznie na Twoim urządzeniu.</p>"
+      },
+      {
+        "id": "retention",
+        "title": "Co może zostać zachowane i na jak długo",
+        "html": "<p>Bez prośby o wcześniejsze usunięcie korespondencję i załączniki przechowujemy do zakończenia obsługi zgłoszenia, a następnie najwyżej 90 dni od jego zamknięcia. Zamknięcie oznacza końcową odpowiedź albo 30 dni bez odpowiedzi na prośbę o informacje potrzebne do obsługi. To harmonogram obsługi skrzynki pocztowej, a nie automatyczne kasowanie przez aplikację.</p><p>Na uzasadnioną prośbę dane usuwamy wcześniej, bez zbędnej zwłoki, chyba że wybrane informacje są potrzebne do konkretnego roszczenia lub wykonania obowiązku prawnego. Takie informacje mogą pozostać do prawomocnego zakończenia postępowania, upływu właściwego terminu przedawnienia albo końca ustawowego okresu przechowywania. W odpowiedzi wyjaśnimy zakres i powód ewentualnego zachowania danych.</p>"
+      },
+      {
+        "id": "local",
+        "title": "Dane na urządzeniu i u innych dostawców",
+        "html": "<p>Lokalne ustawienia, logi, pomiary i importowane sesje możesz usunąć odpowiednimi funkcjami aplikacji lub przez ustawienia Androida: Aplikacje → Bimmer Dashboard → Pamięć → Wyczyść dane. Ta operacja usuwa również konfigurację aplikacji. Pliki wyeksportowane do wybranych folderów oraz kopie systemowe trzeba usunąć osobno.</p><p>Usunięcie aplikacji lub jej danych nie usuwa wiadomości, które zostały już do nas wysłane — w tym celu napisz na podany wyżej adres. Dane przetwarzane niezależnie przez Google lub innych dostawców, np. dane związane z reklamami, przeglądarką lub kopiami systemowymi, podlegają ich własnym procedurom. Więcej informacji: <a href=\"/privacy/#retention\">okresy przechowywania</a> i <a href=\"/privacy/\">polityka prywatności Bimmer Dashboard</a>.</p>"
+      }
+    ]
+  },
+  "en": {
+    "title": "Request data deletion",
+    "intro": "How to request deletion of information sent to the developer of Bimmer Dashboard. The app is provided by Konrad Koszela under the developer name Kodzix.",
+    "sections": [
+      {
+        "id": "request",
+        "title": "Send an email request",
+        "html": "<p>You can request deletion without installing the app or creating an account. Bimmer Dashboard does not offer user accounts.</p><ol><li>Email <a href=\"mailto:kodzixdev@gmail.com?subject=Bimmer%20Dashboard%20-%20data%20deletion\"><strong>kodzixdev@gmail.com</strong></a>.</li><li>Use the subject <strong>Bimmer Dashboard — data deletion</strong>.</li><li>Ask us to delete information from your support requests, including attached logs. Preferably send the request from the address used for the original report. Include its date or subject if you remember it.</li></ol><p>Do not resend the log or send an identity document. If we cannot locate your report or confirm that it concerns you, we will ask for necessary clarification. We respond without undue delay, normally within one month. Where permitted by law, this period may be extended; we will notify you and explain why.</p>"
+      },
+      {
+        "id": "scope",
+        "title": "What we delete",
+        "html": "<p>After reviewing your request, we delete the covered support information under our control:</p><ul><li>received support messages and attachments;</li><li>diagnostic logs and their vehicle, measurement, adapter and device information, including VIN or adapter identifiers if they were submitted;</li><li>email addresses and other contact information in the deleted correspondence.</li></ul><p>Exceptions and retention periods are explained below. We do not have remote access to information stored only on your device.</p>"
+      },
+      {
+        "id": "retention",
+        "title": "What may be retained and for how long",
+        "html": "<p>Without an earlier deletion request, support correspondence and attachments are kept until the report is closed and for no more than 90 days after closure. A report is closed after a final response or after 30 days without a reply to a request for information needed to proceed. This is a mailbox handling schedule, not automatic deletion by the app.</p><p>For a valid request, we delete the information earlier without undue delay, unless selected information is needed for a specific legal claim or legal obligation. Such information may be retained until proceedings are finally concluded, the applicable limitation period expires or the statutory retention period ends. Our response will explain the scope and reason for any retention.</p>"
+      },
+      {
+        "id": "local",
+        "title": "Information on your device and with other providers",
+        "html": "<p>You can delete local settings, logs, measurements and imported sessions using the app's relevant controls or Android settings: Apps → Bimmer Dashboard → Storage → Clear data. This also removes your app configuration. Delete exported files in your chosen folders and system backups separately.</p><p>Uninstalling the app or clearing its data does not delete messages already sent to us: email the address above for that. Information processed independently by Google or other providers, such as advertising, browser or system-backup data, is subject to their own procedures. For details, see <a href=\"/en/privacy/#retention\">retention periods</a> and the <a href=\"/en/privacy/\">Bimmer Dashboard privacy policy</a>.</p>"
+      }
+    ]
+  }
+}
