@@ -1,0 +1,126 @@
+{
+  "pl": {
+    "title": "Polityka prywatności",
+    "updated": "27 października 2026",
+    "intro": "Polityka opisuje dane w aplikacji Bimmer Dashboard na Androida (pakiet bimmer.dashboard) i na tej stronie: informacje lokalne na telefonie, dobrowolne zgłoszenia oraz przetwarzanie przez usługi reklamowe Google.",
+    "sections": [
+      {
+        "id": "controller",
+        "title": "1. Administrator danych i kontakt",
+        "html": "<p>Aplikację Bimmer Dashboard udostępnia <strong>Konrad Koszela</strong>, posługujący się nazwą dewelopera <strong>Kodzix</strong>. Administratorem danych otrzymywanych w zgłoszeniach i przetwarzanych w związku z obsługą aplikacji oraz tej strony jest Konrad Koszela, w zakresie opisanym w tej polityce.</p><p>W sprawach prywatności, realizacji praw i pomocy technicznej kontaktuj się przez <a href=\"mailto:kodzixdev@gmail.com\">kodzixdev@gmail.com</a>. Nie musisz zakładać konta w aplikacji. Dane pozostające wyłącznie na Twoim urządzeniu nie są automatycznie udostępniane administratorowi. Zakres przetwarzania przez niezależnych dostawców, w tym Google, opisano poniżej.</p>"
+      },
+      {
+        "id": "functionality",
+        "title": "2. Odczyty samochodu i uprawnienia",
+        "html": "<p>Bluetooth służy do połączenia z adapterem diagnostycznym. Aplikacja odczytuje parametry silnika i skrzyni, błędy oraz identyfikację sterowników. Dane mogą obejmować VIN, jeśli udostępni go sterownik, adres MAC i nazwę adaptera oraz protokół połączenia. Zapamiętany profil ECU ułatwia kolejne połączenie.</p><p>Opcjonalny pomiar GPS korzysta z lokalizacji udostępnianej przez Androida: aplikacja wykorzystuje prędkość, dokładność, czas i informacje o satelitach. Nie zapisuje współrzędnych ani historii trasy. Starsze wersje Androida mogą wymagać zgody na lokalizację także do wyszukiwania Bluetooth. Powiadomienie i usługa połączenia umożliwiają kontynuowanie odczytów w tle; nie oznacza to automatycznego wysyłania logów.</p>"
+      },
+      {
+        "id": "storage",
+        "title": "3. Dane przechowywane lokalnie",
+        "html": "<p>Telefon zapisuje ustawienia i wygląd ekranów, zapamiętany adapter i sterowniki, wyniki pomiarów, historie, log diagnostyczny oraz importowane sesje. Profil JSON może zawierać konfigurację, adapter i historie; CSV zawiera wybrane pomiary lub log.</p><p>Pliki nie są automatycznie przesyłane na serwer Kodzix. Android może objąć je kopią zapasową lub przenoszeniem urządzenia zgodnie z ustawieniami systemu i dostawcy kopii. Postęp trzech reklam i odblokowanie PRO pozostają tylko w pamięci procesu; znikają po jego zakończeniu.</p>"
+      },
+      {
+        "id": "support",
+        "title": "4. Zgłoszenia, eksport i Google AI",
+        "html": "<p><strong>Zgłoś błąd</strong> przygotowuje wiadomość w wybranej aplikacji pocztowej. Wysyłasz ją samodzielnie po sprawdzeniu treści i załącznika. Wiadomość zawiera informacje o telefonie, Androidzie, wersji aplikacji, adapterze, ECU i stanie połączenia oraz kopię CSV. Log może zawierać VIN, MAC, odpowiedzi sterowników i odczyty. Po wysłaniu otrzymujemy także adres nadawcy oraz opis, który dopiszesz. Używamy ich do obsługi problemu.</p><p>Przy zwykłym udostępnianiu wybierasz odbiorcę pliku. Przycisk AI przy błędzie otwiera przeglądarkę z pytaniem zawierającym kod i opis usterki, ECU oraz język. Nie dołączamy VIN, MAC ani logu. Dalsze korzystanie z Google i przeglądarki podlega ich zasadom.</p>"
+      },
+      {
+        "id": "ads",
+        "title": "5. Reklamy i wybory prywatności",
+        "html": "<p>Wydanie z reklamami korzysta z Google AdMob oraz platformy zgód Google UMP. Google Mobile Ads SDK może zbierać i udostępniać adres IP, przybliżoną lokalizację wynikającą z IP, interakcje z aplikacją i reklamami, diagnostykę wydajności oraz identyfikatory urządzenia lub konta, w tym identyfikator reklamowy Androida i app set ID. Cele obejmują reklamę, jej pomiar i analitykę oraz ochronę przed nadużyciami. Kod aplikacji nie przekazuje SDK reklamowemu odczytów samochodu, VIN, MAC adaptera ani danych GPS.</p><p>Gdy jest to wymagane, UMP wyświetla formularz wyboru przed żądaniem reklam. Przycisk <strong>Prywatność reklam</strong> pozwala ponownie otworzyć wymagane ustawienia. Identyfikatorem reklamowym możesz zarządzać również w Androidzie. Odmowa lub cofnięcie zgody może ograniczyć dostępność albo personalizację reklam. Funkcje PRO odblokowują trzy dobrowolne reklamy z nagrodą na czas bieżącego procesu aplikacji.</p><p>Szczegóły: <a href=\"https://policies.google.com/technologies/partner-sites\">wykorzystanie danych przez Google</a> i <a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\">dane przetwarzane przez SDK</a>.</p>"
+      },
+      {
+        "id": "legal",
+        "title": "6. Cele i podstawy przetwarzania",
+        "html": "<ul><li>Udostępnienie funkcji aplikacji i wykonanie wybranych przez Ciebie czynności: art. 6 ust. 1 lit. b RODO, w zakresie niezbędnym do świadczenia usługi.</li><li>Odpowiedzi na zgłoszenia, diagnozowanie awarii, bezpieczeństwo oraz ustalenie, dochodzenie lub obrona roszczeń: art. 6 ust. 1 lit. f RODO. Uzasadnionym interesem jest zapewnienie sprawnej obsługi i ochrona praw.</li><li>Przetwarzanie reklamowe wymagające zgody: art. 6 ust. 1 lit. a RODO oraz właściwe przepisy dotyczące technologii na urządzeniu. Zgodę możesz wycofać na przyszłość.</li></ul><p>Zgłoszenie i korzystanie z GPS są dobrowolne. Brak odpowiedniego uprawnienia ogranicza funkcję, która go potrzebuje. Bez informacji opisujących problem możemy nie być w stanie go zdiagnozować. Podstawowe ekrany pozostają dostępne bez odblokowania PRO. Zasady Google wyjaśniają podstawy przetwarzania stosowane przez tego dostawcę.</p>"
+      },
+      {
+        "id": "recipients",
+        "title": "7. Odbiorcy i przetwarzanie za granicą",
+        "html": "<p>Zgłoszenia wysłane na kodzixdev@gmail.com są obsługiwane przez usługę Gmail firmy Google. Techniczną obsługę tej witryny zapewnia GitHub Pages. Odbiorcy plików wybrani przez Ciebie oraz Google przy korzystaniu z przeglądarki lub Google AI stosują również własne zasady prywatności. Nie udostępniamy otrzymanych logów publicznie ani nie przekazujemy ich do AdMob.</p><p>Odbiorcami mogą być dostawcy poczty obsługujący dobrowolne zgłoszenie, wybrani przez Ciebie odbiorcy eksportów, Google i partnerzy reklamowi wskazani w formularzu zgód oraz dostawcy hostingu tej strony. Kopie systemowe obsługuje dostawca wybrany w ustawieniach Androida.</p><p>Dostawcy mogą przetwarzać dane poza Europejskim Obszarem Gospodarczym, również w USA, zgodnie ze swoimi warunkami i odpowiednimi mechanizmami transferu, np. decyzją stwierdzającą odpowiedni stopień ochrony lub standardowymi klauzulami umownymi, gdy mają zastosowanie. Google opisuje zabezpieczenia i dostęp do dalszych informacji w <a href=\"https://policies.google.com/privacy/frameworks\">zasadach transferów danych</a>.</p>"
+      },
+      {
+        "id": "retention",
+        "title": "8. Przechowywanie i usuwanie",
+        "html": "<ul><li>Źródłowy log obejmuje jedną sesję, do 2 MiB. Nowa sesja zastępuje poprzednią; przy osiągnięciu limitu dalszy zapis zatrzymuje się. Ostatni log pozostaje dostępny po rozłączeniu.</li><li>Kopie załączników starsze niż siedem dni są usuwane przy przygotowywaniu kolejnego eksportu lub zgłoszenia; nie działa tu osobny codzienny harmonogram usuwania.</li><li>Ustawienia, pomiary i importy pozostają do usunięcia odpowiednią funkcją aplikacji lub wyczyszczenia jej danych. Możesz użyć także ustawień Androida albo odinstalować aplikację. Eksporty w wybranych folderach i kopie systemowe usuwa się osobno.</li><li>Korespondencja dotycząca zgłoszenia i przesłane załączniki są przechowywane do zakończenia jego obsługi, a następnie najwyżej przez 90 dni od zamknięcia zgłoszenia. Zgłoszenie uznajemy za zamknięte po udzieleniu końcowej odpowiedzi albo po 30 dniach bez odpowiedzi na prośbę o informacje potrzebne do dalszej obsługi. Dłuższe zachowanie wybranych danych jest dopuszczalne tylko wtedy, gdy są potrzebne w związku z konkretnym roszczeniem lub obowiązkiem prawnym: do prawomocnego zakończenia postępowania, upływu właściwego terminu przedawnienia albo końca ustawowego okresu przechowywania. Usuwanie danych ze skrzynki pocztowej odbywa się w ramach obsługi zgłoszeń, a nie przez aplikację.</li></ul><p>Google stosuje własne <a href=\"https://policies.google.com/technologies/retention\">okresy i zasady przechowywania</a>. Usunięcie aplikacji nie usuwa już wysłanego e-maila ani danych przechowywanych przez niezależnych dostawców.</p>"
+      },
+      {
+        "id": "rights",
+        "title": "9. Twoje prawa",
+        "html": "<p>W granicach mających zastosowanie przepisów możesz żądać dostępu, sprostowania, usunięcia, ograniczenia przetwarzania i przeniesienia danych, wnieść sprzeciw oraz wycofać zgodę bez wpływu na wcześniejsze zgodne z prawem przetwarzanie. Napisz na <a href=\"mailto:kodzixdev@gmail.com\">kodzixdev@gmail.com</a>. Nie mamy zdalnego dostępu do danych pozostających wyłącznie na Twoim telefonie.</p><p>Możesz złożyć skargę do właściwego organu nadzorczego, w Polsce do <a href=\"https://uodo.gov.pl/\">Prezesa Urzędu Ochrony Danych Osobowych</a>. Nie podejmujemy na podstawie logów zautomatyzowanych decyzji wywołujących skutki prawne; personalizacja reklam przez dostawców zależy od ich zasad i Twoich wyborów.</p><p>Na żądanie dotyczące danych odpowiadamy bez zbędnej zwłoki, zasadniczo w ciągu miesiąca od jego otrzymania. W przypadkach przewidzianych przez RODO termin może zostać przedłużony; poinformujemy o tym wraz z uzasadnieniem. Wycofanie zgody na reklamy nie usuwa automatycznie korespondencji dotyczącej pomocy technicznej, przetwarzanej na odrębnej podstawie.</p>"
+      },
+      {
+        "id": "website",
+        "title": "10. Ta strona internetowa",
+        "html": "<p>Strona nie zawiera reklam, zewnętrznych czcionek ani własnych narzędzi analitycznych i reklamowych identyfikatorów śledzenia. Hosting GitHub Pages obsługuje połączenia. GitHub zapisuje adresy IP odwiedzających w celach bezpieczeństwa, niezależnie od zalogowania do konta GitHub; może także przetwarzać informacje techniczne o przeglądarce i żądaniu potrzebne do działania oraz ochrony usługi. Nie ustalamy tu odrębnego okresu retencji dla systemów dostawcy. Więcej informacji: <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">polityka prywatności GitHub</a> oraz <a href=\"https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection\">informacja GitHub Pages o danych odwiedzających</a>.</p>"
+      },
+      {
+        "id": "security",
+        "title": "11. Bezpieczeństwo i zmiany",
+        "html": "<p>Dane lokalne korzystają z mechanizmów ochrony Androida. Udostępniany załącznik otrzymuje ograniczone uprawnienie odczytu; nie publikujemy logów automatycznie. Połączenia SDK Google są szyfrowane podczas transmisji. Bezpieczeństwo i kopie poczty lub wyeksportowanych plików zależą także od wybranego przez Ciebie dostawcy i odbiorcy.</p><p>Nie prowadzimy własnego serwera synchronizacji diagnostyki ani automatycznego wysyłania awarii do Kodzix. Polityka może być aktualizowana wraz ze zmianą funkcji i dostawców. Data powyżej wskazuje aktualną wersję.</p>"
+      }
+    ]
+  },
+  "en": {
+    "title": "Privacy policy",
+    "updated": "27 October 2026",
+    "intro": "This policy covers Bimmer Dashboard for Android (package bimmer.dashboard) and this website, distinguishing local phone data, voluntary support reports and information processed by Google's advertising services.",
+    "sections": [
+      {
+        "id": "controller",
+        "title": "1. Data controller and contact",
+        "html": "<p>Bimmer Dashboard is provided by <strong>Konrad Koszela</strong>, using the developer name <strong>Kodzix</strong>. Konrad Koszela is the controller of information received in support reports and processed in connection with operating the app and this website, within the scope described in this policy.</p><p>For privacy, rights requests and support, contact <a href=\"mailto:kodzixdev@gmail.com\">kodzixdev@gmail.com</a>. The app requires no account. Information remaining solely on your device is not automatically disclosed to the controller. Processing by independent providers, including Google, is described below.</p>"
+      },
+      {
+        "id": "functionality",
+        "title": "2. Vehicle readings and permissions",
+        "html": "<p>Bluetooth connects a diagnostic adapter. The app reads engine and transmission parameters, faults and ECU identification, potentially including a VIN supplied by the ECU, adapter MAC address and name, and protocol. Remembered ECU profiles help subsequent connections.</p><p>Optional GPS measurements use Android location information: speed, accuracy, time and satellite information. Coordinates and route history are not saved. Older Android versions may require location permission for Bluetooth discovery. A notification and connection service support background readings; they do not automatically upload logs.</p>"
+      },
+      {
+        "id": "storage",
+        "title": "3. Information stored locally",
+        "html": "<p>The phone stores screen settings and appearance, remembered adapters and ECUs, measurements, histories, a diagnostic log and imported sessions. JSON profiles may include configuration, the adapter and histories; CSV exports contain measurements or a log.</p><p>Files are not automatically uploaded to Kodzix. Android may include them in backups or device transfers according to system and provider settings. Three-ad progress and PRO access exist only in process memory and disappear when it ends.</p>"
+      },
+      {
+        "id": "support",
+        "title": "4. Reports, exports and Google AI",
+        "html": "<p><strong>Report a bug</strong> prepares an email for you to review and send. It includes phone, Android and app-version information, adapter and ECU details, connection status and a CSV copy. The log may include a VIN, MAC address, ECU responses and readings. Sending it also supplies your sender address and added description, used to address the issue.</p><p>For ordinary sharing, you choose the recipient. The AI button opens a browser question based on the fault code, description, ECU and language, without attaching a VIN, MAC address or log. Further use of Google and the browser follows their policies.</p>"
+      },
+      {
+        "id": "ads",
+        "title": "5. Advertising and privacy choices",
+        "html": "<p>The advertising-enabled release uses Google AdMob and Google's User Messaging Platform (UMP). The Google Mobile Ads SDK may collect and share an IP address, approximate location inferred from that IP, app and advertising interactions, performance diagnostics, and device or account identifiers, including the Android advertising ID and app set ID. Purposes include advertising, measurement and analytics, and preventing abuse. The app's code does not pass vehicle readings, VINs, adapter MAC addresses or GPS information to the advertising SDK.</p><p>Where required, UMP presents choices before ads are requested. The <strong>Ad privacy</strong> button lets you reopen the required settings. You can also manage your advertising ID in Android settings. Refusing or withdrawing consent may limit ad availability or personalisation. Three voluntary rewarded ads unlock PRO for the current app-process session.</p><p>See <a href=\"https://policies.google.com/technologies/partner-sites\">how Google uses information from apps</a> and <a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\">information processed by the SDK</a>.</p>"
+      },
+      {
+        "id": "legal",
+        "title": "6. Purposes and legal grounds",
+        "html": "<ul><li>Providing requested app functions: Article 6(1)(b) GDPR, where necessary for the service.</li><li>Support, fault diagnosis, security and establishing, exercising or defending legal claims: Article 6(1)(f) GDPR. Our legitimate interest is effective support and protecting rights.</li><li>Advertising requiring consent: Article 6(1)(a) GDPR and applicable device-technology rules. Consent can be withdrawn for the future.</li></ul><p>Reports and GPS are optional. Missing permissions limit the functions needing them; missing issue information may prevent diagnosis. Basic dashboard screens remain available without PRO. Google's policies explain its processing grounds.</p>"
+      },
+      {
+        "id": "recipients",
+        "title": "7. Recipients and international processing",
+        "html": "<p>Reports sent to kodzixdev@gmail.com are handled through Google's Gmail service. This website is hosted by GitHub Pages. File recipients you select, and Google when you use a browser or Google AI, also apply their own privacy policies. We do not publish received logs or pass them to AdMob.</p><p>Recipients may include email providers handling a voluntary report, recipients you choose for exports, Google and advertising partners shown in the consent form, and this website's hosting providers. System backups are handled by the provider selected in Android settings.</p><p>Providers may process information outside the European Economic Area, including in the United States, under their terms and applicable transfer arrangements, such as an adequacy decision or standard contractual clauses where applicable. Google's <a href=\"https://policies.google.com/privacy/frameworks\">data-transfer frameworks</a> explain its safeguards and how to obtain further information.</p>"
+      },
+      {
+        "id": "retention",
+        "title": "8. Retention and deletion",
+        "html": "<ul><li>The source log covers one session, up to 2 MiB. A new session replaces the previous one; further writing stops when the limit is reached. The last log remains available after disconnection.</li><li>Attachment copies older than seven days are removed when another export or report is prepared. There is no separate daily deletion schedule.</li><li>Settings, measurements and imports remain until deleted through an available app function or by clearing app data. You can also use Android settings or uninstall the app. Exports in chosen folders and system backups must be managed separately.</li><li>Support correspondence and submitted attachments are retained until the report is closed and then for no more than 90 days after closure. A report is considered closed after a final response, or after 30 days without a reply to a request for information needed to proceed. Selected information may be retained longer only when needed for a specific legal claim or legal obligation: until the proceedings are finally concluded, the applicable limitation period expires, or the statutory retention period ends. Email deletion is performed as part of support handling, not by the app.</li></ul><p>Google applies its own <a href=\"https://policies.google.com/technologies/retention\">retention periods and practices</a>. Uninstalling the app does not delete an email already sent or information held by independent providers.</p>"
+      },
+      {
+        "id": "rights",
+        "title": "9. Your rights",
+        "html": "<p>Subject to applicable law, you may request access, correction, erasure, restriction and portability of information, object to processing, and withdraw consent without affecting earlier lawful processing. Contact <a href=\"mailto:kodzixdev@gmail.com\">kodzixdev@gmail.com</a>. We have no remote access to information that remains only on your phone.</p><p>You may complain to the competent supervisory authority, including Poland's <a href=\"https://uodo.gov.pl/\">President of the Personal Data Protection Office</a>. We do not use diagnostic logs to make automated decisions producing legal effects. Advertising personalisation by providers depends on their policies and your choices.</p><p>We respond to data-rights requests without undue delay, normally within one month of receipt. The period may be extended in the circumstances allowed by the GDPR; we will inform you and explain why. Withdrawing advertising consent does not automatically delete support correspondence processed on a separate legal basis.</p>"
+      },
+      {
+        "id": "website",
+        "title": "10. This website",
+        "html": "<p>This website contains no ads, external fonts, or our own analytics tools and advertising tracking identifiers. GitHub Pages hosts this website. GitHub logs visitors' IP addresses for security purposes whether or not they are signed into GitHub; it may also process technical browser and request information needed to deliver and protect the service. We do not specify a separate retention period for the provider's systems here. See the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">GitHub privacy statement</a> and <a href=\"https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection\">GitHub Pages visitor data information</a>.</p>"
+      },
+      {
+        "id": "security",
+        "title": "11. Security and updates",
+        "html": "<p>Local information benefits from Android's protections. A shared attachment receives limited read access; we do not publish logs automatically. Google's SDK connections are encrypted in transit. The security and copies of email or exported files also depend on the provider and recipient you select.</p><p>We do not operate our own diagnostic synchronisation server or automatically upload crash reports to Kodzix. This policy may change as features and providers change. The date above identifies the current version.</p>"
+      }
+    ]
+  }
+}
